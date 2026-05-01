@@ -1,0 +1,81 @@
+{
+  "_doc": "Template para crear nuevos clientes blog. Copiar a {cliente}.json y rellenar. Borrar campos _doc.",
+  "name": "TEMPLATE",
+  "brand": "Razón social completa",
+  "industry": "Sector específico (ej: 'Tokenización inmobiliaria · marketplace RWA España')",
+  "audience": "ICP exacto del cliente (ej: 'Inversores particulares 30-50 años con capacidad ahorro · gestores wealth')",
+  "mission": "1-2 frases: por qué publica blog · qué autoridad busca proyectar · qué huella quiere dejar.",
+  "language": "es-ES",
+  "voice_variant": "ej: 'Editorial/divulgación' · 'Operativa/comercial' · 'Research/analítica'",
+  "tone_dimensions": {
+    "_doc": "Cada dimensión 0.0-1.0. 0=primera opción, 1=segunda. Calibrar con voice_samples.",
+    "funny_serious": 0.5,
+    "formal_casual": 0.5,
+    "respectful_irreverent": 0.5,
+    "enthusiastic_matter_of_fact": 0.5
+  },
+  "readability": {
+    "flesch_grade_min": 10,
+    "flesch_grade_max": 14,
+    "flesch_ease_min": 50,
+    "flesch_ease_max": 70
+  },
+  "style": {
+    "sentence_length_mean": 18,
+    "sentence_length_std": 6,
+    "contraction_frequency": 0.4,
+    "passive_voice_max_pct": 15,
+    "vocabulary_tier": "consumer | professional | technical",
+    "summary_label": "TL;DR | Resumen | Key Insights",
+    "person": "first_person_singular | first_person_plural | second_person | third_person_neutral"
+  },
+  "structure": {
+    "opening_pattern": "Cómo abre cada artículo (problema lector / dataset / pregunta / contexto histórico)",
+    "h2_format": "Numerados / con emoji / como preguntas / con verbos imperativos",
+    "tldr_required": true,
+    "faq_required": true,
+    "faq_min_pairs": 6,
+    "closing_pattern": "Cómo cierra cada artículo (CTA / mapa escenarios / síntesis / pregunta abierta)"
+  },
+  "length_targets": {
+    "informational": [1000, 1500],
+    "pillar_guide": [1500, 2500],
+    "deep_dive": [2000, 3500],
+    "news_explainer": [600, 1000]
+  },
+  "evidence_density": {
+    "verifiable_figures_per_300_words": 1,
+    "claims_with_source_per_2000_words": [8, 14],
+    "tier_1_sources_minimum": 2
+  },
+  "signal_phrases_allowed": [
+    "_doc: Frases que el cliente SÍ usa para introducir análisis o postura"
+  ],
+  "signal_phrases_forbidden": [
+    "_doc: Frases que el cliente NUNCA debería usar"
+  ],
+  "vocabulary_yes": {
+    "sectoriales": ["_doc: términos del sector que SÍ usa el cliente"],
+    "institucionales": ["_doc: términos institucionales o de autoridad"]
+  },
+  "vocabulary_blacklist": [
+    "_doc: muletillas, jerga marketing, anglicismos forzados que el cliente NO usa"
+  ],
+  "voice_samples": [
+    "_doc: URLs públicas (web del cliente, posts, LinkedIn) y rutas locales a brand-voice.md, approved-examples/"
+  ],
+  "do": [
+    "_doc: 8-12 reglas concretas de qué SÍ hacer al escribir para este cliente"
+  ],
+  "dont": [
+    "_doc: 8-12 reglas concretas de qué NUNCA hacer"
+  ],
+  "metadata": {
+    "version": "0.1",
+    "created": "YYYY-MM-DD",
+    "last_updated": "YYYY-MM-DD",
+    "based_on": [
+      "_doc: lista de archivos consultados (brand-voice.md, rules.md, etc.)"
+    ]
+  }
+}

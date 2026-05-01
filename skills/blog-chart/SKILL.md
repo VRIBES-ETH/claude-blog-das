@@ -69,10 +69,15 @@ Label text:        fill="currentColor" opacity="0.8"
 
 | Color | Hex | Use Case |
 |-------|-----|----------|
-| Orange | `#f97316` | Primary / highest value |
-| Sky Blue | `#38bdf8` | Secondary / comparison |
-| Purple | `#a78bfa` | Tertiary / special category |
-| Green | `#22c55e` | Quaternary / positive indicator |
+| DAS Orange | `#f54a00` | Primary / highest value (DAS brand color) |
+| Navy DAS | `#1e2a38` | Secondary / comparison (DAS brand dark) |
+| Slate | `#64748b` | Tertiary / muted category |
+| Green | `#22c55e` | Quaternary / positive indicator (only when semantically positive) |
+
+**DAS branding note (fork v1.7.1-das.1):** Primary palette aligned with DAS brand
+(`#f54a00` orange + `#1e2a38` navy). For complex matplotlib PNG charts with full DAS™
+RESEARCH branding (footer, watermark, Bloomberg-style margins), use the DAS-specific
+`chart_renderer.py` skill at `OPERACIONES/SKILLS/BLOG-DAS/CHART-RENDERER/` instead.
 
 For text inside colored elements: `fill="white"` with `fontWeight="800"`.
 
