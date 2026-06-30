@@ -103,6 +103,13 @@ Find 8-12 statistics the article should include:
 Output format:
 
 ```
+---
+status: brief_pendiente_aprobacion_victor
+auto_write: true | false
+write_mode: auto | manual_tier1 | manual_assets | manual_factcheck
+auto_write_reason: [one-line reason]
+---
+
 # Content Brief: [Title Suggestion]
 
 ## Template
@@ -262,3 +269,16 @@ claim that can stand alone when quoted.
 
 Save to the user's project as `briefs/[slug]-brief.md` or to a location
 they specify. Confirm the brief is ready for `/blog write`.
+
+## DAS automation gate
+
+For DAS briefs, the YAML frontmatter must always expose the production gate:
+
+- `status: brief_pendiente_aprobacion_victor`
+- `auto_write: true` only when the next safe step is unattended `/das-blog:write`
+- `auto_write: false` when the post requires manual voice calibration, embedded templates/assets, unusually high-stakes factcheck, or a session with persona/context loaded
+- `write_mode: auto | manual_tier1 | manual_assets | manual_factcheck`
+- `auto_write_reason: ...`
+
+Do not hide this decision only in the body. The Obsidian properties panel is
+the human approval surface, and downstream automation reads these fields.

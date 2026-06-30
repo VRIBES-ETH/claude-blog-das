@@ -3,8 +3,8 @@
   "description": "Voz editorial DAS para blog institucional sobre digital assets, blockchain y finanzas. Tercera persona neutra, tono institucional analítico, autoridad procedente del dato verificado.",
   "brand": "Digital Atelier Solutions LLC (DAS®)",
   "industry": "Agencia de comunicación ejecutiva especializada en blockchain y finanzas. Pilares: ghostwriting ejecutivo, copywriting institucional, SEO editorial, research sectorial.",
-  "audience": "CFO, CIO, comités de inversiones, gestores patrimoniales, emisores institucionales y directores de comunicación con mandato regulado en activos digitales.",
-  "mission": "Construir autoridad ejecutiva en blockchain y finanzas a través de comunicación rigurosa anclada en dato verificado y lectura calibrada.",
+  "audience": "CEOs y founders del sector blockchain y finanzas que necesitan construir autoridad pública y presencia ejecutiva en LinkedIn. ICP comercial de DAS: directivos de emisores cripto, fintech, infraestructura DLT, asset managers y firmas de servicios financieros que evalúan o ya operan en activos digitales.",
+  "mission": "Ayudar a CEOs y founders del sector blockchain y finanzas a construir autoridad ejecutiva en LinkedIn a través de ghostwriting, copywriting y SEO editorial anclados en dato verificado.",
 
   "tone_dimensions": {
     "funny_serious": 0.05,
@@ -44,7 +44,7 @@
 
   "dont": [
     "Don't use first person plural promotional ('en DAS vemos', 'nuestra interpretación').",
-    "Don't use second person addressing the reader directly ('has emitido', 'tu LP').",
+    "Don't mimic the LinkedIn personal voice of the founder (no anecdotal hooks, no irreverent asides). Second person addressing the CEO/founder reader naturally is fine ('si lideras', 'tu empresa', 'tu equipo legal').",
     "Don't use em-dashes; use commas, parentheses or restructure instead.",
     "Don't use retail crypto jargon or LinkedIn hooks ('crypto' standalone, 'hodl', 'moon', 'la pregunta es...', 'ante este panorama...')."
   ]
